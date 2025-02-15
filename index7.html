@@ -10,7 +10,18 @@
 
 
     //Processamento
-
+    function string() {
+        let soletrando = Array.from(palavra);
+        let vogais = 0;
+        for (let contador = 0; contador < soletrando.length; contador++) {
+            if (soletrando[contador] === "a" || soletrando[contador] === "e" || soletrando[contador] === "i" || soletrando[contador] === "o" || soletrando[contador] === "u" ) {
+               vogais++ 
+            }            
+        }
+        alert(`Tem ${vogais} na palavra ${palavra}.`);
+    }
+    let palavra = prompt("Informe uma palavra:").toLocaleLowerCase();
+    string(palavra)
 
     //Saída
 
